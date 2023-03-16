@@ -283,6 +283,11 @@ nlu:
     - مباحث ارائه چیا هستند؟
   - intent: faq/who_is_the_organizer:
   examples: |
+    - برگزار کننده رویداد کیا هستند؟
+    - رویداد توسط چه کسی برگزار میشه؟
+    - رویداد توسط کدام دانشکده برگزار میشه؟
+    - رویداد توسط کدام دانشگاه برگزار میشه؟
+    - رویداد توسط چه سازمانی برگزار میشه؟
     
   #These Parts are knowledge based and should be changed by the appropriate person for the task:
   - intent: prof_x_is_speaking_or_not:
