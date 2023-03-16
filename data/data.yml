@@ -261,4 +261,88 @@ nlu:
     - چجوری میشه تو رویداد ثبت نام کرد؟
     - چجوری میشه تو وسس ثبت نام کرد؟
 
+  - intent: faq/remote_participation:
+  examples: |
+    - آیا امکان شرکت از راه دور وجود دارد؟
+    - شرکت از راه دور چطوریه؟
+    - شرکت مجازی چطوریه؟
+    - آیا امکان شرکت مجازی وجود دارد؟
 
+  - intent: faq/in_person_participation:
+  examples: |
+    -  اگر توی رویداد بصورت حضوری ثبت نام کردیم میتونیم ارائه‌ رو مجازی شرکت کنیم
+    - شرکت حضوری مجازی رو هم اکی میکنه؟
+    - شرکت حضوری مجازی رو هم پوشش میده؟
+
+  - intent: topics:
+  examples: |
+    موضوعات ارائه چیا هستند؟
+    کلا موضوعات چیه؟
+    موضوعات چیه؟
+    مباحث ارائه ها چیه؟
+    مباحث ارائه چیا هستند؟
+
+  #These Parts are knowledge based and should be changed by the appropriate person for the task:
+  - intent: prof_x_is_speaking_or_not:
+  examples: |
+    - آیا [x](name) در رویداد می خواهد صحبت کند؟
+    - آیا [x](name) در رویداد می خواهد ارائه بدهد؟
+    - آیا [x](name) ارائه دارد؟
+    - آیا [x](name) در رویداد شرکت می کند؟
+    - آیا [x](name) در رویداد می خواهد شرکت کند؟
+
+  - intent: prof_x_date_of_speech:
+  examples: |
+    زمان ارائه [x](name) کیه؟
+    ارائه [x](name) کیه؟
+    تاریخ ارائه [x](name) کیه؟
+    ارائه استاد [x](name) کیه؟
+    زمان ارائه استاد [x](name) کیه؟
+    تاریخ ارائه استاد [x](name) کیه؟
+
+  - intent: prof_x_speech_topic:
+  examples: |
+    موضوع ارائه [x](name) چیه؟
+    ارائه [x](name) درباره چیه؟
+    مباحث ارائه [x](name) چیه؟
+    موضوع ارائه استاد [x](name) چیه؟
+
+  - intent: prof_x_speech_place:
+  examples: |
+    مکان ارائه [x](name) چیه؟
+    ارائه [x](name) مجازیه یا حضوری؟
+    ارائه [x](name) حضوریه؟
+    ارائه [x](name) مجازیه؟
+
+  - intent: prof_x_speech_link:
+  examples: |
+    لینک ارائه [x](name) چیه؟
+    لینک ارائه استاد [x](name) چیه؟
+    لینک ارائه [x](name) چیه؟
+    لینک ارائه استاد [x](name) چیه؟
+  
+  - intent: prof_x_speech_abstract:
+   examples: |
+    خلاصه ارائه [x](name) چیه؟
+    خلاصه ارائه استاد [x](name) چیه؟
+    خلاصه ارائه [x](name) چیه؟
+    خلاصه ارائه استاد [x](name) چیه؟
+    توضیح درباره ارائه [x](name) بده
+    ارائه [x](name) درباره چیه
+    خلاصه ارائه [x](name) بگو
+    خلاصه ارائه استاد [x](name) بگو
+    ارائه [x](name) کلیاتش 
+
+  - intent: topic_x_profs:  
+    examples: |
+    - استادانی که در رابطه با [x](topic) ارائه می دهند؟
+    کیا در رابطه با [x](topic) ارائه می دهند؟
+    موضوع  [x](topic) توسط کیا ارائه میشه؟
+    موضوع [x](topic) ارائه دهنده داره؟
+    ارائه کیا درباره [x](topic) هست
+
+    
+
+
+  
+      
