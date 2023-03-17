@@ -17,7 +17,8 @@ responses:
   # intents deny and affirm must be used in dynamic actions
 
   utter_faq/ask_for_help:
-    - text: "چه کمکی میتونم بهتون بکنم؟"
+    - text: "چه کمکی میتونم بهتون بکنم؟
+    من میتونم اگه سوالی درمورد رویداد و برگزاری اون دارید بهتون جواب بدم."
 
   utter_react_positive:
     - text: "خیلی خوشحالم که از عملکرد من راضی بودید!"
@@ -35,9 +36,6 @@ responses:
 
   utter_faq/wss_good_for_who:
     - text: "مخاطبین این رویداد بیشتر دانشجویان سال های آخر کارشناسی و دانشجویان ارشد و دکترا هستند،  البته شما ممکن است شما در این گروه ها نباشید، اما مخاطب رویداد   به حساب بیاید"
-
-  utter_faq/price:
-    - text: "هزینه ثبت نام رویداد  100،000 تومان برای هر نفر است."
 
   utter_faq/what_is_the_topic:
     - text: "موضوعات ارائه در تقویم رویداد به تفصیل نوشته شده است. اما به طور کلی موضوعات مرتبط با علوم کامپیوتر در ارائه بررسی میشوند."
@@ -64,9 +62,10 @@ responses:
   utter_faq/what_is_the_date: #TODO: answer was not in the FAQ doc (current response is temporary)
     - text: "این رویداد از 17 تا 20 فروردین برگزای میشه"
 
-  utter_faq/what_is_the_speaker:
-    - text: "تیم علمی رویداد که متشکل از اساتید دانشگاه شریف و برترین دانشجویان مقطع دکترا و ارشد دانشکده کامپیوتر شریف می‌باشد، با دقت فراوان به دعوت از اساتید و محققین مختلف می‌پردازد.
-کیفیت، تعداد و به‌روز بودن مقالات، مواردی چون h-index و citation، میزان ارتباط و نفوذ با دانشگاه‌ها مبدا تنها گوشه ای از معیارهای این تیم برای دعوت از ارائه دهندگان می‌باشد."
+  utter_faq/what_is_the_speaker: #TODO: answer was not in the FAQ doc (current response is temporary)
+    - text: "لیست اساتید سخنران در این رویداد:
+    علی قلی زاده
+    قلی علی زاده"
 
   utter_faq/preliminaries:
     - text: "با توجه به اینکه رویداد برای طیف وسیعی از مخاطبین حوزه کامپیوتر و تکنولوژی‌ست، ارائه دهندگان سعی می‌کنند ارائه خود را به گونه‌ای تنظیم کنند که نیاز به دانستن چیزی از قبل نباشد."
@@ -87,7 +86,7 @@ responses:
   utter_faq/what_is_the_language: #TODO: answer was not in the FAQ doc (current response is temporary)
     - text: "ارائه ها در زبان های فارسی و انگلیسی هستند"
 
-  utter_how_to_register:
+  utter_faq/how_to_register:
     - text: "برای ثبت نام در رویداد می توانید به https://wss.ce.sharif.edu/ مراجعه کنید."
 
   utter_faq/remote_participation: #TODO: answer was not in the FAQ doc (current response is temporary)
@@ -95,9 +94,6 @@ responses:
 
   utter_faq/in_person_participation: #TODO: answer was not in the FAQ doc (current response is temporary)
     - text: "فعلا نمیدونم منتظرم تیم رسانه بهم بگن جوابشو :)"
-
-  utter_topics:
-    - text: "موضوعات ارائه در تقویم رویداد به تفصیل نوشته شده است. اما به طور کلی موضوعات مرتبط با علوم کامپیوتر در ارائه بررسی میشوند."
 
   utter_faq/who_is_the_organizer: #TODO: answer was not in the FAQ doc (current response is temporary)
     - text: "این رویداد توسط انجمن علمی دانشکده کامپیوتر دانشگاه شریف (SSC) برگزای میشه"
