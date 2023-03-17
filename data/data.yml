@@ -229,7 +229,7 @@ nlu:
     - مکان برگزاری وسس چیست؟
     - مکان برگزاری wss چیست؟
 
-  - intent: Why_is_it_named_WSS
+  - intent: why_is_it_named_WSS
   examples: |
     - چرا این رویداد وسس نام دارد؟
     - چرا این رویداد wss نام دارد؟
