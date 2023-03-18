@@ -60,12 +60,19 @@ responses:
   utter_your_welcome:
     - text: "خواهش میکنم!"
 
+  utter_yes:
+    - text: "بله"
+
+  utter_no:
+    - text: "نه"
+
   utter_faq/ask_for_help:
     - text: "چه کمکی میتونم بهتون بکنم؟
     من میتونم اگه سوالی درمورد رویداد و برگزاری اون دارید بهتون جواب بدم."
 
   utter_react_positive:
     - text: "خیلی خوشحالم که از عملکرد من راضی بودید!"
+    - text: "رضایت شما باعث خرسندی منه :)"
 
   utter_react_negative:
     - text: "متاسفم که نتونستم به نیازتون پاسخگو باشم.
