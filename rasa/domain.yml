@@ -1,7 +1,45 @@
-version: "3.1"
-# this is responding data for rasa core (not including knowledge-based answers)
+# This is the domain file
 # the product is a chat-bot for 8th WSS (an online seminar in computer science and engineering)
-# the data is in Persian language
+# the bot uses Persian language
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - affirm
+  - deny
+  - faq/ask_for_help
+  - react_positive
+  - react_negative
+  - faq/what_is_wss
+  - faq/prof_selection
+  - faq/wss_good_for_who
+  - faq/what_is_the_topic
+  - faq/what_is_the_goal
+  - faq/what_is_the_venue
+  - faq/what_is_the_time
+  - faq/what_is_the_duration
+  - faq/what_is_the_date
+  - faq/what_is_the_speaker
+  - faq/preliminaries
+  - faq/what_is_the_price
+  - faq/catering
+  - faq/what_is_the_location
+  - faq/why_is_it_named_WSS
+  - faq/what_is_the_language
+  - how_to_register
+  - faq/remote_participation
+  - faq/in_person_participation
+  - faq/who_is_the_organizer
+  - prof_x_is_speaking_or_not
+  - prof_x_date_of_speech
+  - prof_x_speech_topic
+  - prof_x_speech_place
+  - prof_x_speech_link
+  - prof_x_speech_abstract
+  - topic_x_profs
+
 responses:
   utter_greet:
     - text: "سلام سلام :)
@@ -10,11 +48,17 @@ responses:
 
   utter_goodbye:
     - text: "خدانگهدار :)"
+    - text: "بای بای!"
+    - text: "تا دیداری دیگر بدرود"
 
   utter_thanks:
-    - text: "خواهش میکنم!"
+    - text: "ممنونم!"
+    - text: "مرسی!"
+    - text: "متشکرم!"
+    - text: "سپاس!"
 
-  # intents deny and affirm must be used in dynamic actions
+  utter_your_welcome:
+    - text: "خواهش میکنم!"
 
   utter_faq/ask_for_help:
     - text: "چه کمکی میتونم بهتون بکنم؟
@@ -99,3 +143,6 @@ responses:
     - text: "این رویداد توسط انجمن علمی دانشکده کامپیوتر دانشگاه شریف (SSC) برگزای میشه"
 
   # Rest of the questions are knowledge-based and should be handled later
+
+session_config:
+  session_expiration_time: 60
