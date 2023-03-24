@@ -150,5 +150,9 @@ responses:
 
   # Rest of the questions are knowledge-based and should be handled later
 
+  # fallback resposnse
+  utter_default_answer:
+  - text: "متاسفم من متوجه منظور شما نشدم اگر مایل هستید میتوانید سوال خود را به شکل دیگری مطرح نمایید. همچنین میتوانید با پشتیبانی رویداد در تماس باشید. "
+
 session_config:
   session_expiration_time: 60
