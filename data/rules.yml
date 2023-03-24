@@ -135,3 +135,9 @@ rules:
   steps:
   - intent: who_is_the_organizer
   - action: utter_who_is_the_organizer
+
+# fallback rule
+- rule: default answer for fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default_answer
