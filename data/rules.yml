@@ -19,7 +19,7 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: say 'your welcome' in response to 'thanks'
+- rule: say 'you're welcome' in response to 'thanks'
   steps:
   - intent: thanks
   - action: utter_your_welcome
@@ -61,25 +61,10 @@ rules:
   - intent: what_is_the_goal
   - action: utter_what_is_the_goal
 
-- rule: what is the event venue?
-  steps:
-  - intent: what_is_the_venue
-  - action: utter_what_is_the_time
-
 - rule: when is the event?
   steps:
   - intent: what_is_the_time
-  - action: utter_what_is_the_date
-
-- rule: how long is the event?
-  steps:
-  - intent: what_is_the_duration
-  - action: utter_what_is_the_duration
-
-- rule: what days will the event be held?
-  steps:
-  - intent: what_is_the_date
-  - action: utter_what_is_the_date
+  - action: utter_what_is_the_time
 
 - rule: who are the speakers?
   steps:
