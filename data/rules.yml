@@ -19,7 +19,7 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: say 'your welcome' in response to 'thanks'
+- rule: say 'you're welcome' in response to 'thanks'
   steps:
   - intent: thanks
   - action: utter_your_welcome
@@ -38,100 +38,91 @@ rules:
 
 - rule: what is wss?
   steps:
-  - intent: faq/what_is_wss
-  - action: uttter_faq/what_is_wss
+  - intent: what_is_wss
+  - action: utter_what_is_wss
 
 - rule: how profs were selected?
   steps:
-  - intent: faq/prof_selection
-  - action: utter_faq/prof_selection
+  - intent: prof_selection
+  - action: utter_prof_selection
 
 - rule: wss is good for who?
   steps:
-  - intent: faq/wss_good_for_who
-  - action: utter_faq/wss_good_for_who
+  - intent: wss_good_for_who
+  - action: utter_wss_good_for_who
 
 - rule: what are the topics of talks?
   steps:
-  - intent: faq/what_is_the_topics
-  - action: utter_faq/what_is_the_topics
+  - intent: what_is_the_topic
+  - action: utter_what_is_the_topic
 
 - rule: what are the goals of the event?
   steps:
-  - intent: faq/what_is_the_goal
-  - action: utter_faq/what_is_the_goal
-
-- rule: what is the event venue?
-  steps:
-  - intent: faq/what_is_the_venue
-  - action: utter_faq/what_is_the_time
+  - intent: what_is_the_goal
+  - action: utter_what_is_the_goal
 
 - rule: when is the event?
   steps:
-  - intent: faq/what_is_the_time
-  - action: utter_faq/what_is_the_date
-
-- rule: how long is the event?
-  steps:
-  - intent: faq/what_is_the_duration
-  - action: utter_faq/what_is_the_duration
-
-- rule: what days will the event be held?
-  steps:
-  - intent: faq/what_is_the_date
-  - action: utter_faq/what_is_the_date
+  - intent: what_is_the_time
+  - action: utter_what_is_the_time
 
 - rule: who are the speakers?
   steps:
-  - intent: faq/what_is_the_speaker
-  - action: utter_faq/what_is_the_speaker
+  - intent: what_is_the_speaker
+  - action: utter_what_is_the_speaker
 
 - rule: what are the requirements?
   steps:
-  - intent: faq/preliminaries
-  - action: utter_faq/preliminaries
+  - intent: preliminaries
+  - action: utter_preliminaries
 
 - rule: how much is the price of participation?
   steps:
-  - intent: faq/what_is_the_price
-  - action: utter_faq/what_is_the_price
+  - intent: what_is_the_price
+  - action: utter_what_is_the_price
 
 - rule: will there be food?
   steps:
-  - intent: faq/catering
-  - action: utter_faq/catering
+  - intent: catering
+  - action: utter_catering
 
 - rule: where is the event being held?
   steps:
-  - intent: faq/what_is_the_location
-  - action: utter_faq/what_is_the_location
+  - intent: what_is_the_location
+  - action: utter_what_is_the_location
 
 - rule: why is it named wss?
   steps:
-  - intent: faq/why_is_it_named_WSS
-  - action: utter_faq/why_is_it_named_WSS
+  - intent: why_is_it_named_WSS
+  - action: utter_why_is_it_named_WSS
 
 - rule: what languages are the talks in?
   steps:
-  - intent: faq/what_is_the_language
-  - action: utter_faq/what_is_the_language
+  - intent: what_is_the_language
+  - action: utter_what_is_the_language
 
 - rule: how can someone register?
   steps:
-  - intent: faq/how_to_register
-  - action: utter_faq/how_to_register
+  - intent: how_to_register
+  - action: utter_how_to_register
 
 - rule: is remote participating possible?
   steps:
-  - intent: faq/remote_participation
-  - action: utter_faq/remote_participation
+  - intent: remote_participation
+  - action: utter_remote_participation
 
 - rule: is in-person participation also include online participation?
   steps:
-  - intent: faq/in_person_participation
-  - action: utter_faq/in_person_participation
+  - intent: in_person_participation
+  - action: utter_in_person_participation
 
 - rule: who are the organizers behind the event?
   steps:
-  - intent: faq/who_is_the_organizer
-  - action: utter_faq/who_is_the_organizer
+  - intent: who_is_the_organizer
+  - action: utter_who_is_the_organizer
+
+# fallback rule
+- rule: default answer for fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default_answer

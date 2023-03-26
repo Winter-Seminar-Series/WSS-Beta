@@ -128,9 +128,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# rasa cache
+
+# rasa cahce files
 .rasa
 
-# model cache 
-models/
-cachemodel/
+# model
+/models
+/cachemodel

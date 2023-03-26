@@ -15,13 +15,16 @@ nlu:
     - به امید دیدار
     - خداحافظ به وسس
     - خداحافظ دوست من
+
 - intent: thanks
   examples: |
     - ممنون
     - ممنونم
     - ممنونم از وسس
     - ممنون از وسس
+
 - intent: affirm
+  examples: |
     - بله
     - بله ممنون
     - بله ممنون از وسس
@@ -33,6 +36,7 @@ nlu:
     - صحیح
   
 - intent: deny
+  examples: |
     - نه
     - نه ممنون
     - نه ممنون از وسس
@@ -43,7 +47,7 @@ nlu:
     - خیر ممنون
     - ممنون خیر
   
-- intent: faq/ask_for_help
+- intent: ask_for_help
   examples: |
     - من به کمک نیاز دارم
     - من به کمک نیاز دارم
@@ -71,7 +75,7 @@ nlu:
     - اشتباهه
     - نمی خواهم
 
-- intent: faq/what_is_wss
+- intent: what_is_wss
   examples: |
     - چیست وسس
     - وسس چیست
@@ -79,15 +83,15 @@ nlu:
     - wss چیست
     - wss چیست؟
   
-- intent: faq/prof_selection
-  exmples: |
+- intent: prof_selection
+  examples: |
     - اساتید چگونه انتخاب شده اند؟
     - اساتید ایرانی هستند؟
     - اساتید خارجی هستند؟
     - اساتید از دانشگاه های برتر هستند؟
     - اساتید از دانشگاه های برتر ایران هستند؟
 
-- intent: faq/wss_good_for_who
+- intent: wss_good_for_who
   examples: |
     - آیا شرکت در سمینار و ارائه های مورد نظر، کمکی به پیشرفت آکادمیک شرکت کننده می کند؟
     -فایده رویداد برای شرکت کنندگان چیست؟
@@ -98,7 +102,7 @@ nlu:
     -این رویدادی برای دانشجو های کارشناسی ارشد مناسب است؟
     -این رویدادی برای دانشجو های دکتری مناسب است؟
 
-- intent: faq/what_is_the_topic
+- intent: what_is_the_topic
   examples: |
     - موضوع رویداد چیست؟
     - موضوع رویداد چیست؟
@@ -108,7 +112,7 @@ nlu:
     - موضوع وسس چیست؟
     - موضوع wss چیست؟
 
-- intent: faq/what_is_the_goal
+- intent: what_is_the_goal
   examples: |
     - هدف رویداد چیست؟
     - هدف رویداد چیست؟
@@ -117,18 +121,8 @@ nlu:
     - هدف wss چیست؟
     - هدف وسس چیست؟
     - هدف wss چیست؟
-
-- intent: faq/what_is_the_venue
-  examples: |
-    - محل برگزاری رویداد چیست؟
-    - محل برگزاری رویداد چیست؟
-    - محل برگزاری رویداد چیست؟
-    - محل برگزاری وسس چیست؟
-    - محل برگزاری wss چیست؟
-    - محل برگزاری وسس چیست؟
-    - محل برگزاری wss چیست؟
   
-- intent: faq/what_is_the_time
+- intent: what_is_the_time
   examples: |
     - زمان برگزاری رویداد چیست؟
     - زمان برگزاری رویداد چیست؟
@@ -137,9 +131,6 @@ nlu:
     - زمان برگزاری wss چیست؟
     - زمان برگزاری وسس چیست؟
     - زمان برگزاری wss چیست؟
-
-- intent: faq/what_is_the_duration
-  examples: |
     - مدت زمان برگزاری رویداد چیست؟
     - مدت زمان برگزاری رویداد چیست؟
     - مدت زمان برگزاری رویداد چیست؟
@@ -147,9 +138,6 @@ nlu:
     - مدت زمان برگزاری wss چیست؟
     - مدت زمان برگزاری وسس چیست؟
     - مدت زمان برگزاری wss چیست؟
-
-- intent: faq/what_is_the_date
-  examples: |
     - تاریخ برگزاری رویداد چیست؟
     - تاریخ برگزاری رویداد چیست؟
     - تاریخ برگزاری رویداد چیست؟
@@ -158,7 +146,7 @@ nlu:
     - تاریخ برگزاری وسس چیست؟
     - تاریخ برگزاری wss چیست؟
 
-- intent: faq/what_is_the_speaker
+- intent: what_is_the_speaker
   examples: |
     - اساتید و محاورین رویداد چه کسانی هستند؟
     - اساتید و محاورین رویداد چه کسانی هستند؟
@@ -168,7 +156,7 @@ nlu:
     - اساتید و محاورین وسس چه کسانی هستند؟
     - اساتید و محاورین wss چه کسانی هستند؟
 
-- intent: faq/preliminaries
+- intent: preliminaries
   examples: |
     - آیا برای شرکت در رویداد از قبل چیزی بلد باشیم؟
     - پیش نیاز های رویداد چیست؟
@@ -185,7 +173,7 @@ nlu:
     - آیا این رویداد مناسب من است؟
     - رویداد مناسب چه کسی است؟
   
-- intent: faq/what_is_the_price
+- intent: what_is_the_price
   examples: |
     - قیمت رویداد چیست؟
     - قیمت رویداد چیست؟
@@ -195,7 +183,7 @@ nlu:
     - قیمت وسس چیست؟
     - قیمت wss چیست؟
   
-- intent: faq/catering
+- intent: catering
   examples: |
     - آیا غذا و نوشیدنی در رویداد ارائه می شود؟
     - آیا غذا و نوشیدنی در رویداد ارائه می شود؟
@@ -208,7 +196,7 @@ nlu:
     - آیا وسس پذیرایی دارد؟
     - پذیرایی رویداد چیست؟
   
-- intent: faq/what_is_the_location
+- intent: what_is_the_location
   examples: |
     - مکان برگزاری رویداد چیست؟
     - مکان برگزاری رویداد چیست؟
@@ -217,8 +205,15 @@ nlu:
     - مکان برگزاری wss چیست؟
     - مکان برگزاری وسس چیست؟
     - مکان برگزاری wss چیست؟
+    - محل برگزاری رویداد چیست؟
+    - محل برگزاری رویداد چیست؟
+    - محل برگزاری رویداد چیست؟
+    - محل برگزاری وسس چیست؟
+    - محل برگزاری wss چیست؟
+    - محل برگزاری وسس چیست؟
+    - محل برگزاری wss چیست؟
 
-- intent: faq/why_is_it_named_WSS
+- intent: why_is_it_named_WSS
   examples: |
     - چرا این رویداد وسس نام دارد؟
     - چرا این رویداد wss نام دارد؟
@@ -229,7 +224,7 @@ nlu:
     - وسس مخفف چه کلمه ایه
     - wss مخفف چه کلمه ایه
 
-- intent: faq/what_is_the_language
+- intent: what_is_the_language
   examples: |
     - زبان برگزاری رویداد چیست؟
     - زبان برگزاری رویداد چیست؟
@@ -250,20 +245,20 @@ nlu:
     - چجوری میشه تو رویداد ثبت نام کرد؟
     - چجوری میشه تو وسس ثبت نام کرد؟
 
-- intent: faq/remote_participation
+- intent: remote_participation
   examples: |
     - آیا امکان شرکت از راه دور وجود دارد؟
     - شرکت از راه دور چطوریه؟
     - شرکت مجازی چطوریه؟
     - آیا امکان شرکت مجازی وجود دارد؟
 
-- intent: faq/in_person_participation
+- intent: in_person_participation
   examples: |
     -  اگر توی رویداد بصورت حضوری ثبت نام کردیم میتونیم ارائه‌ رو مجازی شرکت کنیم
     - شرکت حضوری مجازی رو هم اکی میکنه؟
     - شرکت حضوری مجازی رو هم پوشش میده؟
 
-- intent: faq/who_is_the_organizer
+- intent: who_is_the_organizer
   examples: |
     - برگزار کننده رویداد کیا هستند؟
     - رویداد توسط چه کسی برگزار میشه؟
@@ -271,62 +266,62 @@ nlu:
     - رویداد توسط کدام دانشگاه برگزار میشه؟
     - رویداد توسط چه سازمانی برگزار میشه؟
     
-  #These Parts are knowledge based and should be changed by the appropriate person for the task:
-- intent: prof_x_is_speaking_or_not
-  examples: |
-    - آیا [x](name) در رویداد می خواهد صحبت کند؟
-    - آیا [x](name) در رویداد می خواهد ارائه بدهد؟
-    - آیا [x](name) ارائه دارد؟
-    - آیا [x](name) در رویداد شرکت می کند؟
-    - آیا [x](name) در رویداد می خواهد شرکت کند؟
+#   #These Parts are knowledge based and should be changed by the appropriate person for the task:
+# - intent: prof_x_is_speaking_or_not
+#   examples: |
+#     - آیا [x](name) در رویداد می خواهد صحبت کند؟
+#     - آیا [x](name) در رویداد می خواهد ارائه بدهد؟
+#     - آیا [x](name) ارائه دارد؟
+#     - آیا [x](name) در رویداد شرکت می کند؟
+#     - آیا [x](name) در رویداد می خواهد شرکت کند؟
 
-- intent: prof_x_date_of_speech
-  examples: |
-    - زمان ارائه [x](name) کیه؟
-    - ارائه [x](name) کیه؟
-    - تاریخ ارائه [x](name) کیه؟
-    - ارائه استاد [x](name) کیه؟
-    - زمان ارائه استاد [x](name) کیه؟
-    - تاریخ ارائه استاد [x](name) کیه؟
+# - intent: prof_x_date_of_speech
+#   examples: |
+#     - زمان ارائه [x](name) کیه؟
+#     - ارائه [x](name) کیه؟
+#     - تاریخ ارائه [x](name) کیه؟
+#     - ارائه استاد [x](name) کیه؟
+#     - زمان ارائه استاد [x](name) کیه؟
+#     - تاریخ ارائه استاد [x](name) کیه؟
 
-- intent: prof_x_speech_topic
-  examples: |
-    - موضوع ارائه [x](name) چیه؟
-    - ارائه [x](name) درباره چیه؟
-    - مباحث ارائه [x](name) چیه؟
-    - موضوع ارائه استاد [x](name) چیه؟
+# - intent: prof_x_speech_topic
+#   examples: |
+#     - موضوع ارائه [x](name) چیه؟
+#     - ارائه [x](name) درباره چیه؟
+#     - مباحث ارائه [x](name) چیه؟
+#     - موضوع ارائه استاد [x](name) چیه؟
 
-- intent: prof_x_speech_place
-  examples: |
-    - مکان ارائه [x](name) چیه؟
-    - ارائه [x](name) مجازیه یا حضوری؟
-    - ارائه [x](name) حضوریه؟
-    - ارائه [x](name) مجازیه؟
+# - intent: prof_x_speech_place
+#   examples: |
+#     - مکان ارائه [x](name) چیه؟
+#     - ارائه [x](name) مجازیه یا حضوری؟
+#     - ارائه [x](name) حضوریه؟
+#     - ارائه [x](name) مجازیه؟
 
-- intent: prof_x_speech_link
-  examples: |
-    - لینک ارائه [x](name) چیه؟
-    - لینک ارائه استاد [x](name) چیه؟
-    - لینک ارائه [x](name) چیه؟
-    - لینک ارائه استاد [x](name) چیه؟
+# - intent: prof_x_speech_link
+#   examples: |
+#     - لینک ارائه [x](name) چیه؟
+#     - لینک ارائه استاد [x](name) چیه؟
+#     - لینک ارائه [x](name) چیه؟
+#     - لینک ارائه استاد [x](name) چیه؟
   
-- intent: prof_x_speech_abstract
-   examples: |
-    - خلاصه ارائه [x](name) چیه؟
-    - خلاصه ارائه استاد [x](name) چیه؟
-    - خلاصه ارائه [x](name) چیه؟
-    - خلاصه ارائه استاد [x](name) چیه؟
-    - توضیح درباره ارائه [x](name) بده
-    - ارائه [x](name) درباره چیه
-    - خلاصه ارائه [x](name) بگو
-    - خلاصه ارائه استاد [x](name) بگو
-    - ارائه [x](name) کلیاتش 
+# - intent: prof_x_speech_abstract
+#   examples: |
+#     - خلاصه ارائه [x](name) چیه؟
+#     - خلاصه ارائه استاد [x](name) چیه؟
+#     - خلاصه ارائه [x](name) چیه؟
+#     - خلاصه ارائه استاد [x](name) چیه؟
+#     - توضیح درباره ارائه [x](name) بده
+#     - ارائه [x](name) درباره چیه
+#     - خلاصه ارائه [x](name) بگو
+#     - خلاصه ارائه استاد [x](name) بگو
+#     - ارائه [x](name) کلیاتش 
 
-- intent: topic_x_profs
-    examples: |
-    - استادانی که در رابطه با [x](topic) ارائه می دهند؟
-    - کیا در رابطه با [x](topic) ارائه می دهند؟
-    - موضوع  [x](topic) توسط کیا ارائه میشه؟
-    - موضوع [x](topic) ارائه دهنده داره؟
-    - ارائه کیا درباره [x](topic) هست
+# - intent: topic_x_profs
+#   examples: |
+#     - استادانی که در رابطه با [x](topic) ارائه می دهند؟
+#     - کیا در رابطه با [x](topic) ارائه می دهند؟
+#     - موضوع  [x](topic) توسط کیا ارائه میشه؟
+#     - موضوع [x](topic) ارائه دهنده داره؟
+#     - ارائه کیا درباره [x](topic) هست
 

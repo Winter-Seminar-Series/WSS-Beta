@@ -9,42 +9,41 @@ intents:
   - thanks
   - affirm
   - deny
-  - faq/ask_for_help
+  - ask_for_help
   - react_positive
   - react_negative
-  - faq/what_is_wss
-  - faq/prof_selection
-  - faq/wss_good_for_who
-  - faq/what_is_the_topic
-  - faq/what_is_the_goal
-  - faq/what_is_the_venue
-  - faq/what_is_the_time
-  - faq/what_is_the_duration
-  - faq/what_is_the_date
-  - faq/what_is_the_speaker
-  - faq/preliminaries
-  - faq/what_is_the_price
-  - faq/catering
-  - faq/what_is_the_location
-  - faq/why_is_it_named_WSS
-  - faq/what_is_the_language
+  - what_is_wss
+  - prof_selection
+  - wss_good_for_who
+  - what_is_the_topic
+  - what_is_the_goal
+  - what_is_the_venue
+  - what_is_the_time
+  - what_is_the_duration
+  - what_is_the_date
+  - what_is_the_speaker
+  - preliminaries
+  - what_is_the_price
+  - catering
+  - what_is_the_location
+  - why_is_it_named_WSS
+  - what_is_the_language
   - how_to_register
-  - faq/remote_participation
-  - faq/in_person_participation
-  - faq/who_is_the_organizer
-  - prof_x_is_speaking_or_not
-  - prof_x_date_of_speech
-  - prof_x_speech_topic
-  - prof_x_speech_place
-  - prof_x_speech_link
-  - prof_x_speech_abstract
-  - topic_x_profs
+  - remote_participation
+  - in_person_participation
+  - who_is_the_organizer
+  # knowledge base intents
+  # - prof_x_is_speaking_or_not
+  # - prof_x_date_of_speech
+  # - prof_x_speech_topic
+  # - prof_x_speech_place
+  # - prof_x_speech_link
+  # - prof_x_speech_abstract
+  # - topic_x_profs
 
 responses:
   utter_greet:
-    - text: "سلام سلام :)
-به WSS خوش اومدی!
-چه جوری میتونم کمکت کنم؟"
+    - text: "سلام سلام :)\n به WSS خوش اومدی! \n چه جوری میتونم کمکت کنم؟"
 
   utter_goodbye:
     - text: "خدانگهدار :)"
@@ -66,9 +65,9 @@ responses:
   utter_no:
     - text: "نه"
 
-  utter_faq/ask_for_help:
+  utter_ask_for_help:
     - text: "چه کمکی میتونم بهتون بکنم؟
-    من میتونم اگه سوالی درمورد رویداد و برگزاری اون دارید بهتون جواب بدم."
+             من میتونم اگه سوالی درمورد رویداد و برگزاری اون دارید بهتون جواب بدم."
 
   utter_react_positive:
     - text: "خیلی خوشحالم که از عملکرد من راضی بودید!"
@@ -76,80 +75,75 @@ responses:
 
   utter_react_negative:
     - text: "متاسفم که نتونستم به نیازتون پاسخگو باشم.
-    چه کمک دیگه ای میتونم بهتون بکنم؟"
+        چه کمک دیگه ای میتونم بهتون بکنم؟"
 
-  utter_faq/what_is_wss:
+  utter_what_is_wss:
     - text: "وسس (WSS) مخفف Winter Seminar Series یا همان مجموعه سمینارهای زمستانه است که معمولا زمستان هر سال برگزار میشود اما امسال در بهار 1402 برگزار خواهد شد."
 
-  utter_faq/prof_selection:
+  utter_prof_selection:
     - text: "تیم علمی رویداد که متشکل از اساتید دانشگاه شریف و برترین دانشجویان مقطع دکترا و ارشد دانشکده کامپیوتر شریف می‌باشد، با دقت فراوان به دعوت از اساتید و محققین مختلف می‌پردازد.
-کیفیت، تعداد و به‌روز بودن مقالات، مواردی چون h-index و citation، میزان ارتباط و نفوذ با دانشگاه‌ها مبدا تنها گوشه ای از معیارهای این تیم برای دعوت از ارائه دهندگان می‌باشد."
+        کیفیت، تعداد و به‌روز بودن مقالات، مواردی چون h-index و citation، میزان ارتباط و نفوذ با دانشگاه‌ها مبدا تنها گوشه ای از معیارهای این تیم برای دعوت از ارائه دهندگان می‌باشد."
 
-  utter_faq/wss_good_for_who:
+  utter_wss_good_for_who:
     - text: "مخاطبین این رویداد بیشتر دانشجویان سال های آخر کارشناسی و دانشجویان ارشد و دکترا هستند،  البته شما ممکن است شما در این گروه ها نباشید، اما مخاطب رویداد   به حساب بیاید"
 
-  utter_faq/what_is_the_topic:
+  utter_what_is_the_topic:
     - text: "موضوعات ارائه در تقویم رویداد به تفصیل نوشته شده است. اما به طور کلی موضوعات مرتبط با علوم کامپیوتر در ارائه بررسی میشوند."
 
-  utter_faq/what_is_the_goal:
+  utter_what_is_the_goal:
     - text: "فایده‌ی رویداد برای شرکت‌کنندگان:
-۱. آشنایی و تبادل دانش و اطلاعات بین دانشجویان و اساتید مقیم ایران با پژوهش‌گران و اساتید فعال در معتبرترین دانشگاه‌ها و موسسه‌های علمی جهان.
-۲. کمک به پیشرفت علم کامپیوتر کشور.
-۳. حمایت از محققان داخلی و آشنایی با دستاوردهای آنان در قالب ایده‌ی جدید پوسترسشن.
- ۴. آشنایی بیشتر با فرآیندهای پژوهشی و حل مسئله.
-۵. آشنایی با مسائل به‌روز مطرح در حوزه‌های مختلف علوم کامپیوتر.
-۶. آشنایی عمیق‌تر مخاطبان با فیلدهای مورد علاقه‌ی خود در راستای انتخاب دقیق‌تر مسیر آینده‌شان.
-۷. آشنایی با مباحث پیش‌نیازی ارائه‌های سمینار به صورت عملی و کاربردی در قالب کارگاه‌هایی که پیش از رویداد اصلی برگزار می‌شوند."
+        ۱. آشنایی و تبادل دانش و اطلاعات بین دانشجویان و اساتید مقیم ایران با پژوهش‌گران و اساتید فعال در معتبرترین دانشگاه‌ها و موسسه‌های علمی جهان.
+        ۲. کمک به پیشرفت علم کامپیوتر کشور.
+        ۳. حمایت از محققان داخلی و آشنایی با دستاوردهای آنان در قالب ایده‌ی جدید پوسترسشن.
+        ۴. آشنایی بیشتر با فرآیندهای پژوهشی و حل مسئله.
+        ۵. آشنایی با مسائل به‌روز مطرح در حوزه‌های مختلف علوم کامپیوتر.
+        ۶. آشنایی عمیق‌تر مخاطبان با فیلدهای مورد علاقه‌ی خود در راستای انتخاب دقیق‌تر مسیر آینده‌شان.
+        ۷. آشنایی با مباحث پیش‌نیازی ارائه‌های سمینار به صورت عملی و کاربردی در قالب کارگاه‌هایی که پیش از رویداد اصلی برگزار می‌شوند."
 
-  utter_faq/what_is_the_venue: #TODO: answer was not in the FAQ doc (current response is temporary)
-    - text: "جلسات حضوری رویداد در سالن استاد ربیعی واقع در دانشگاه شریف برگزار میشه."
+  utter_what_is_the_time:
+    - text: "دوره هشتم سری سمینارهای زمستانه در تاریخ ۱۷ فروردین ۱۴۰۲ آغاز می‌شود و ۴ روز به طول می‌انجامد."
 
-  utter_faq/what_is_the_time: #TODO: answer was not in the FAQ doc (current response is temporary)
-    - text: "این رویداد در روز های 17 تا 20 فروردین از ساعت 15:00 تا 19:00 برگزار میشه."
-
-  utter_faq/what_is_the_duration: #TODO: answer was not in the FAQ doc (current response is temporary)
-    - text: "این سلسله جلسات در 3 روز متوالی از 17 تا 20 فروردین برگزای میشند."
-
-  utter_faq/what_is_the_date: #TODO: answer was not in the FAQ doc (current response is temporary)
-    - text: "این رویداد از 17 تا 20 فروردین برگزای میشه"
-
-  utter_faq/what_is_the_speaker: #TODO: answer was not in the FAQ doc (current response is temporary)
+  utter_what_is_the_speaker: #TODO: answer in doc was incomplete (should be completed)
     - text: "لیست اساتید سخنران در این رویداد:
-    علی قلی زاده
-    قلی علی زاده"
+       استاد x در تاریخ x ارائه با موضوع x خواهد داشت.
+       استاد y در تاریخ y ارائه با موضوع y خواهد داشت.
+       "
 
-  utter_faq/preliminaries:
+  utter_preliminaries:
     - text: "با توجه به اینکه رویداد برای طیف وسیعی از مخاطبین حوزه کامپیوتر و تکنولوژی‌ست، ارائه دهندگان سعی می‌کنند ارائه خود را به گونه‌ای تنظیم کنند که نیاز به دانستن چیزی از قبل نباشد."
 
-  utter_faq/what_is_the_price:
+  utter_what_is_the_price:
     - text: "هزینه ثبت نام رویداد  100،000 تومان برای هر نفر است."
 
-  utter_faq/catering:
+  utter_catering:
     - text: "بله، رویداد پذیرایی دارد."
 
-  utter_faq/what_is_the_location: #TODO: answer was not in the FAQ doc (current response is temporary)
-    - text: "مکان برگزاری حضوری:
-     تهران - خیابان آزادی - دانشگاه صنعتی شریف - سالن استاد ربیعی"
+  utter_what_is_the_location:
+    - text: "چنانچه حضوری در رویداد شرکت کرده‌اید، می‌توایند برای حضور در جلسات به سالن ربیعی واقع در دانشگاه شریف مراجعه کنید، در غیر این صورت باید وارد لینک اسکای روم شوید."
 
-  utter_faq/why_is_it_named_WSS:
+  utter_why_is_it_named_WSS:
     - text: "وسس (wss) مخفف عبارت Winter Seminar Series  ( سری سمینارهای زمستانه ) است،"
 
-  utter_faq/what_is_the_language: #TODO: answer was not in the FAQ doc (current response is temporary)
+  utter_what_is_the_language:
     - text: "ارائه ها در زبان های فارسی و انگلیسی هستند"
 
-  utter_faq/how_to_register:
+  utter_how_to_register:
     - text: "برای ثبت نام در رویداد می توانید به https://wss.ce.sharif.edu/ مراجعه کنید."
 
-  utter_faq/remote_participation: #TODO: answer was not in the FAQ doc (current response is temporary)
-    - text: "فعلا نمیدونم منتظرم تیم رسانه بهم بگن جوابشو :)"
+  utter_remote_participation:
+    - text: "ارائه ها به صورت مجازی و حضوری برگزار میشوند. ارائه‌های مجازی در اسکای روم برگزار می‌شوند."
 
-  utter_faq/in_person_participation: #TODO: answer was not in the FAQ doc (current response is temporary)
-    - text: "فعلا نمیدونم منتظرم تیم رسانه بهم بگن جوابشو :)"
+  utter_in_person_participation:
+    - text: "بله درصورتی که ثبت نام شما برای شرکت به صورت حضوری باشه، به ارائه‌ها به صورت مجازی هم دسترسی دارید."
 
-  utter_faq/who_is_the_organizer: #TODO: answer was not in the FAQ doc (current response is temporary)
-    - text: "این رویداد توسط انجمن علمی دانشکده کامپیوتر دانشگاه شریف (SSC) برگزای میشه"
+  utter_who_is_the_organizer:
+    - text: "رویداد WSS توسط انجمن علمی دانشکده مهندسی کامپیوتر دانشگاه صنعتی شریف برگزار می‌شود."
 
   # Rest of the questions are knowledge-based and should be handled later
+
+  # fallback response
+  utter_default_answer:
+  - text: "متاسفم من متوجه منظور شما نشدم اگر مایل هستید میتوانید سوال خود را به شکل دیگری مطرح نمایید. همچنین میتوانید با پشتیبانی رویداد در تماس باشید. "
 
 session_config:
   session_expiration_time: 60

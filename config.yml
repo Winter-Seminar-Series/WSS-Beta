@@ -1,0 +1,129 @@
+# The config recipe.
+# https://rasa.com/docs/rasa/model-configuration/
+recipe: default.v1
+
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+
+# # pipeline 1 (Rasa default) (verified)
+
+# language: fa
+
+# pipeline:
+# # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
+# # If you'd like to customize it, uncomment and adjust the pipeline.
+# # See https://rasa.com/docs/rasa/tuning-your-model for more information.
+#   - name: WhitespaceTokenizer
+#   - name: RegexFeaturizer
+#   - name: CRFEntityExtractor
+#   - name: EntitySynonymMapper
+#   - name: LexicalSyntacticFeaturizer
+#   - name: CountVectorsFeaturizer
+#   - name: CountVectorsFeaturizer
+#     analyzer: char_wb
+#     min_ngram: 1
+#     max_ngram: 4
+#   - name: DIETClassifier
+#     epochs: 100
+#     constrain_similarities: true
+#   - name: EntitySynonymMapper
+#   - name: ResponseSelector
+#     epochs: 100
+#     constrain_similarities: true
+#   - name: FallbackClassifier
+#     threshold: 0.3
+#     ambiguity_threshold: 0.1
+
+# # pipeline 2 (verified) fast text spacy 
+# language: "fa"  # your two-letter language codepipeline:
+# # run these codes first
+# # wget https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.fa.300.vec.gz 
+# # mkdir spacy_fa
+# # python -m spacy init vectors fa ./cc.fa.300.vec.gz ./spacy_fa/spacymodel
+# # mkdir packed
+# # python -m spacy package ./spacy_fa/spacymodel ./packed/
+# # pip3 install packed/fa_pipeline-0.0.0/dist/fa_pipeline-0.0.0.tar.gz 
+
+# pipeline:
+#   - name: SpacyNLP
+#     model: fa_pipeline
+#   - name: SpacyTokenizer
+#   - name: SpacyFeaturizer
+#   - name: RegexFeaturizer
+#   - name: LexicalSyntacticFeaturizer
+#   - name: CountVectorsFeaturizer
+#   - name: CountVectorsFeaturizer
+#     analyzer: "char_wb"
+#     min_ngram: 1
+#     max_ngram: 4
+#   - name: DIETClassifier
+#     epochs: 100
+#   - name: EntitySynonymMapper
+#   - name: ResponseSelector
+#     epochs: 100
+#   - name: FallbackClassifier
+#     threshold: 0.5
+#     ambiguity_threshold: 0.1
+
+
+
+# pipeline 3
+language: fa
+
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: LanguageModelFeaturizer
+    # Name of the language model to use
+    model_name: "bert"
+    # Pre-Trained weights to be loaded
+    # model_weights: "rasa/LaBSE" # default weghts
+
+    # model_weights: "HooshvareLab/bert-fa-zwnj-base" # https://huggingface.co/HooshvareLab/bert-fa-zwnj-base
+
+    model_weights: "HooshvareLab/bert-fa-base-uncased" # https://huggingface.co/HooshvareLab/bert-fa-base-uncased
+
+    # An optional path to a directory from which
+    # to load pre-trained model weights.
+    # If the requested model is not found in the
+    # directory, it will be downloaded and
+    # cached in this directory for future use.
+    # The default value of `cache_dir` can be
+    # set using the environment variable
+    # `TRANSFORMERS_CACHE`, as per the
+    # Transformers library.
+    cache_dir: null
+  
+  - name: RegexFeaturizer
+#  - name: CRFEntityExtractor
+  - name: EntitySynonymMapper
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+    constrain_similarities: true
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    epochs: 100
+    constrain_similarities: true
+  - name: FallbackClassifier
+    threshold: 0.2
+#    ambiguity_threshold: 0.1
+
+
+policies:
+# No configuration for policies was provided. The following default policies were used to train your model.
+# If you'd like to customize them, uncomment and adjust the policies.
+# See https://rasa.com/docs/rasa/policies for more information.
+  # - name: MemoizationPolicy
+  - name: RulePolicy
+  # - name: UnexpecTEDIntentPolicy
+  #   max_history: 5
+  #   epochs: 100
+  # - name: TEDPolicy
+  #   max_history: 5
+  #   epochs: 100
+  #   constrain_similarities: true
