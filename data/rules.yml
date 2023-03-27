@@ -1,4 +1,4 @@
-# This is part of the rules data (only unconditioned rules). it can be expanded later on
+# This is part of the rules' data (only unconditioned rules). it can be expanded later on
 # This file only contains simple short Q&A conversations
 # the product is a chat-bot for 8th WSS (an online seminar in computer science and engineering)
 # the bot uses Persian language
@@ -6,24 +6,29 @@ version: "3.1"
 
 rules:
 
-# basic conversation
+# chitchat
 
-- rule: beginning greeting
-  conversation_start: true
+- rule: respond to chitchat
   steps:
-  - intent: greet
-  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
 
-- rule: goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
-- rule: say 'you're welcome' in response to 'thanks'
-  steps:
-  - intent: thanks
-  - action: utter_your_welcome
-
+#- rule: beginning greeting
+#  conversation_start: true
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#
+#- rule: goodbye
+#  steps:
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- rule: say 'you're welcome' in response to 'thanks'
+#  steps:
+#  - intent: thanks
+#  - action: utter_your_welcome
+#
 - rule: respond to positive reaction
   steps:
   - intent: react_positive
@@ -36,90 +41,95 @@ rules:
 
 # FAQs
 
-- rule: what is wss?
+- rule: respond to FAQ
   steps:
-  - intent: what_is_wss
-  - action: utter_what_is_wss
-
-- rule: how profs were selected?
-  steps:
-  - intent: prof_selection
-  - action: utter_prof_selection
-
-- rule: wss is good for who?
-  steps:
-  - intent: wss_good_for_who
-  - action: utter_wss_good_for_who
-
-- rule: what are the topics of talks?
-  steps:
-  - intent: what_is_the_topic
-  - action: utter_what_is_the_topic
-
-- rule: what are the goals of the event?
-  steps:
-  - intent: what_is_the_goal
-  - action: utter_what_is_the_goal
-
-- rule: when is the event?
-  steps:
-  - intent: what_is_the_time
-  - action: utter_what_is_the_time
-
-- rule: who are the speakers?
-  steps:
-  - intent: what_is_the_speaker
-  - action: utter_what_is_the_speaker
-
-- rule: what are the requirements?
-  steps:
-  - intent: preliminaries
-  - action: utter_preliminaries
-
-- rule: how much is the price of participation?
-  steps:
-  - intent: what_is_the_price
-  - action: utter_what_is_the_price
-
-- rule: will there be food?
-  steps:
-  - intent: catering
-  - action: utter_catering
-
-- rule: where is the event being held?
-  steps:
-  - intent: what_is_the_location
-  - action: utter_what_is_the_location
-
-- rule: why is it named wss?
-  steps:
-  - intent: why_is_it_named_WSS
-  - action: utter_why_is_it_named_WSS
-
-- rule: what languages are the talks in?
-  steps:
-  - intent: what_is_the_language
-  - action: utter_what_is_the_language
-
-- rule: how can someone register?
-  steps:
-  - intent: how_to_register
-  - action: utter_how_to_register
-
-- rule: is remote participating possible?
-  steps:
-  - intent: remote_participation
-  - action: utter_remote_participation
-
-- rule: is in-person participation also include online participation?
-  steps:
-  - intent: in_person_participation
-  - action: utter_in_person_participation
-
-- rule: who are the organizers behind the event?
-  steps:
-  - intent: who_is_the_organizer
-  - action: utter_who_is_the_organizer
+  - intent: faq
+  - action: utter_faq
+#
+#- rule: what is wss?
+#  steps:
+#  - intent: what_is_wss
+#  - action: utter_what_is_wss
+#
+#- rule: how profs were selected?
+#  steps:
+#  - intent: prof_selection
+#  - action: utter_prof_selection
+#
+#- rule: wss is good for whom?
+#  steps:
+#  - intent: wss_good_for_who
+#  - action: utter_wss_good_for_who
+#
+#- rule: what are the topics of talks?
+#  steps:
+#  - intent: what_is_the_topic
+#  - action: utter_what_is_the_topic
+#
+#- rule: what are the goals of the event?
+#  steps:
+#  - intent: what_is_the_goal
+#  - action: utter_what_is_the_goal
+#
+#- rule: when is the event?
+#  steps:
+#  - intent: what_is_the_time
+#  - action: utter_what_is_the_time
+#
+#- rule: who are the speakers?
+#  steps:
+#  - intent: what_is_the_speaker
+#  - action: utter_what_is_the_speaker
+#
+#- rule: what are the requirements?
+#  steps:
+#  - intent: preliminaries
+#  - action: utter_preliminaries
+#
+#- rule: how much is the price of participation?
+#  steps:
+#  - intent: what_is_the_price
+#  - action: utter_what_is_the_price
+#
+#- rule: will there be food?
+#  steps:
+#  - intent: catering
+#  - action: utter_catering
+#
+#- rule: where is the event being held?
+#  steps:
+#  - intent: what_is_the_location
+#  - action: utter_what_is_the_location
+#
+#- rule: why is it named wss?
+#  steps:
+#  - intent: why_is_it_named_WSS
+#  - action: utter_why_is_it_named_WSS
+#
+#- rule: what languages are the talks in?
+#  steps:
+#  - intent: what_is_the_language
+#  - action: utter_what_is_the_language
+#
+#- rule: how can someone register?
+#  steps:
+#  - intent: how_to_register
+#  - action: utter_how_to_register
+#
+#- rule: is remote participating possible?
+#  steps:
+#  - intent: remote_participation
+#  - action: utter_remote_participation
+#
+#- rule: is in-person participation also include online participation?
+#  steps:
+#  - intent: in_person_participation
+#  - action: utter_in_person_participation
+#
+#- rule: who are the organizers behind the event?
+#  steps:
+#  - intent: who_is_the_organizer
+#  - action: utter_who_is_the_organizer
 
 # fallback rule
 - rule: default answer for fallback

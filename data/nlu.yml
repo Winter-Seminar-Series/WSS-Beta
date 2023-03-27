@@ -3,7 +3,7 @@ version: "3.1"
 #the product is a chatbot for a WSS (an online seminar in computer science and engineering )
 #the data is in Persian language
 nlu:
-- intent: greet
+- intent: chitchat/greet
   examples: |
     - سلام
     - درود
@@ -13,7 +13,7 @@ nlu:
     - درود بر شما
     - سلام بر شما
 
-- intent: goodbye
+- intent: chitchat/goodbye
   examples: |
     - خداحافظ
     - به امید دیدار
@@ -27,7 +27,7 @@ nlu:
     - خدا نگهدار
     - بدرود
 
-- intent: thanks
+- intent: chitchat/thanks
   examples: |
     - ممنون
     - ممنونم
@@ -74,7 +74,7 @@ nlu:
     - ممنون خیر
     - نخیر
   
-- intent: ask_for_help
+- intent: chitchat/ask_for_help
   examples: |
     - من به کمک نیاز دارم
     - من به کمک نیاز دارم
@@ -116,7 +116,7 @@ nlu:
     - این چیزی نیست که میخواستم
     - این چیزی نیست که پرسیدم
 
-- intent: what_is_wss
+- intent: faq/what_is_wss
   examples: |
     - چیست وسس
     - وسس چیست
@@ -129,7 +129,7 @@ nlu:
     - وسس چیه؟؟؟
     - وسس برای چیه؟
   
-- intent: prof_selection
+- intent: faq/prof_selection
   examples: |
     - اساتید چگونه انتخاب شده اند؟
     - اساتید ایرانی هستند؟
@@ -160,7 +160,7 @@ nlu:
     - ارائه دهندگان چگونه انتخاب شدند؟
     - اساتید ارائه دهنده رو چجوری انتخاب کردید؟
 
-- intent: wss_good_for_who
+- intent: faq/wss_good_for_who
   examples: |
     - آیا شرکت در سمینار و ارائه های مورد نظر، کمکی به پیشرفت آکادمیک شرکت کننده می کند؟
     -فایده رویداد برای شرکت کنندگان چیست؟
@@ -179,7 +179,7 @@ nlu:
     - آیا این رویداد مناسب من هست؟
     - آیا من میتونم تو این شرکت کنم؟
 
-- intent: what_is_the_topic
+- intent: faq/what_is_the_topic
   examples: |
     - موضوع رویداد چیست؟
     - موضوع رویداد چیست؟
@@ -197,7 +197,7 @@ nlu:
     - ارائه ها درمورد چی اند؟
     - رویداد درباره چیه؟
 
-- intent: what_is_the_goal
+- intent: faq/what_is_the_goal
   examples: |
     - هدف رویداد چیست؟
     - هدف رویداد چیست؟
@@ -215,7 +215,7 @@ nlu:
     - برای چی وسس؟
     - برای چی wss؟
   
-- intent: what_is_the_time
+- intent: faq/what_is_the_time
   examples: |
     - زمان برگزاری رویداد چیست؟
     - زمان برگزاری رویداد چیست؟
@@ -259,7 +259,7 @@ nlu:
     - رویداد چند روز طول میکشد؟
     - رویداد چند روز طول میکشه؟
 
-- intent: what_is_the_speaker
+- intent: faq/what_is_the_speaker
   examples: |
     - اساتید و محاورین رویداد چه کسانی هستند؟
     - اساتید و محاورین رویداد چه کسانی هستند؟
@@ -290,7 +290,7 @@ nlu:
     - سخنران ها کی اند؟
     - لیست سخنرانان
 
-- intent: preliminaries
+- intent: faq/preliminaries
   examples: |
     - آیا برای شرکت در رویداد از قبل چیزی بلد باشیم؟
     - پیش نیاز های رویداد چیست؟
@@ -318,7 +318,7 @@ nlu:
     - چه دروسی رو باید پاس کرده باشیم؟
     - چه درس هایی رو لازمه که پاس کرده باشیم؟
   
-- intent: what_is_the_price
+- intent: faq/what_is_the_price
   examples: |
     - قیمت رویداد چیست؟
     - قیمت رویداد چیست؟
@@ -356,7 +356,7 @@ nlu:
     - هزینه ثبت نام چند ریاله؟
     - قیمت ثبت نام چند ریاله؟
   
-- intent: catering
+- intent: faq/catering
   examples: |
     - آیا غذا و نوشیدنی در رویداد ارائه می شود؟
     - آیا غذا و نوشیدنی در رویداد ارائه می شود؟
@@ -396,7 +396,7 @@ nlu:
     - تشنمه
     - تشنه ام
 
-- intent: what_is_the_location
+- intent: faq/what_is_the_location
   examples: |
     - مکان برگزاری رویداد چیست؟
     - مکان برگزاری رویداد چیست
@@ -439,7 +439,7 @@ nlu:
     - برای شرکت حضوری باید کجا بیایم؟
     - آیا رویداد تو تهرانه؟
 
-- intent: why_is_it_named_WSS
+- intent: faq/why_is_it_named_WSS
   examples: |
     - چرا این رویداد وسس نام دارد؟
     - چرا این رویداد wss نام دارد؟
@@ -467,7 +467,7 @@ nlu:
     - چرا اسمشو گذاشتین wss؟
     - آخه وسس هم اسم بود خدایی؟
 
-- intent: what_is_the_language
+- intent: faq/what_is_the_language
   examples: |
     - زبان برگزاری رویداد چیست؟
     - زبان برگزاری رویداد چیست؟
@@ -498,7 +498,7 @@ nlu:
     - زبان رویداد اینگلیسیه؟
     - زبان رویداد انگلیسی است؟
 
-- intent : how_to_register
+- intent : faq/how_to_register
   examples: |
     - چگونه ثبت نام کنیم؟
     - ثبت نام چطوریه؟
@@ -521,7 +521,7 @@ nlu:
     - ثبت نام از چه طریقیه؟
     - از همین سایت میتونم ثبت نام کنم؟
 
-- intent: remote_participation
+- intent: faq/remote_participation
   examples: |
     - آیا امکان شرکت از راه دور وجود دارد؟
     - شرکت از راه دور چطوریه؟
@@ -530,7 +530,7 @@ nlu:
     - آیا میتونیم ریموت هم شرکت کنیم؟
     - امکان اینکه مجازی شرکت کنیم هم هست؟
 
-- intent: in_person_participation
+- intent: faq/in_person_participation
   examples: |
     -  اگر توی رویداد بصورت حضوری ثبت نام کردیم میتونیم ارائه‌ رو مجازی شرکت کنیم
     - شرکت حضوری مجازی رو هم اکی میکنه؟
@@ -539,7 +539,7 @@ nlu:
     - شرکت حضوری توی رویداد شرکت مجازی رو هم کاور میکنه؟
     - شرکت حضوری برای شرکت مجازی هم کافیه
 
-- intent: who_is_the_organizer
+- intent: faq/who_is_the_organizer
   examples: |
     - برگزار کننده رویداد کیا هستند؟
     - رویداد توسط چه کسی برگزار میشه؟
