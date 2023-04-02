@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 
 @app.route('/FAQ/Ask', methods=['GET'])
-# do we need to check role?
+# TODO do we need to check role?
 # @check_role
 async def ask_question():
     try:
