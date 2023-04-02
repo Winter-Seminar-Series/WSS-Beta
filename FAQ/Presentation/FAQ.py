@@ -4,13 +4,13 @@ from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 
 from FAQ.Util.Exceptions import InvalidQuestionException, NoQuestionAsked
-
 from FAQ.Handler.FAQ_handler import FAQHandler
 
 
 app = Flask(__name__)
 
 CORS(app)
+
 
 @app.route("/FAQ/Ask", methods=["GET"])
 # TODO do we need to check role?
@@ -29,3 +29,6 @@ async def ask_question():
     except NoQuestionAsked:
         message = {"No question asked! Please type in your question."}
         return make_response(jsonify(message), 401)
+
+
+app.run()
