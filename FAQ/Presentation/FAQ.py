@@ -10,7 +10,7 @@ from FAQ.Handler.FAQ_handler import FAQHandler
 app = Flask(__name__)
 
 
-@app.route('/FAQ/Ask', methods=['GET'])
+@app.route("/FAQ/Ask", methods=["GET"])
 # TODO do we need to check role?
 # @check_role
 async def ask_question():
