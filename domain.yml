@@ -109,7 +109,7 @@ responses:
     - text: "با توجه به اینکه رویداد برای طیف وسیعی از مخاطبین حوزه کامپیوتر و تکنولوژی‌ست، ارائه دهندگان سعی می‌کنند ارائه خود را به گونه‌ای تنظیم کنند که نیاز به دانستن چیزی از قبل نباشد."
 
   utter_faq/what_is_the_price:
-    - text: "هزینه ثبت نام رویداد  100،000 تومان برای هر نفر است."
+    - text: "بسته به اینکه شما به صورت حضوری یا مجازی در رویداد شرکت می‌کنید، هزینه ثبت نام متفاوت است. هزینه دقیق ثبت نام با توجه به شرایطتتان را می‌توانید در wss.ce.sharif.edu مشاهده کنید."
 
   utter_faq/catering:
     - text: "بله، رویداد پذیرایی دارد."
@@ -135,6 +135,26 @@ responses:
   utter_faq/who_is_the_organizer:
     - text: "رویداد WSS توسط انجمن علمی دانشکده مهندسی کامپیوتر دانشگاه صنعتی شریف برگزار می‌شود."
 
+  utter_faq/staff:
+    - text: "لیست استف زحمتکش رویداد رو میتونید کامل توی https://wss.ce.sharif.edu/staff ببینید."
+
+  utter_faq/support:
+    - text: "برای تماس با پشتیبانی شما میتوانید در تلگرام به آیدی  WSS_Info@ پیام دهید."
+
+  utter_faq/website:
+    - text: "سایت برگزاری https://wss.ce.sharif.edu/ است که احتمالا الان دارین توش با من صحبت میکنین :)"
+
+  utter_faq/registeration_deaedline:
+    - text: "بله، مهلت ثبت نام تا پایان برگزاری رویداد تمدید شده است."
+
+  utter_faq/roundtable:
+    - text: "میتونید برای اطلاعات در این مورد به https://wss.ce.sharif.edu/roundtables مراجعه کنید."
+
+  utter_faq/labtalks:
+    - text: "به دنبال استفاده از ظرفیت‌های علمی اساتید و دانشجویان دانشگاه، بخشی از فعالیت‌های WSS تحت عنوان «لب‌تاک» به آزمایشگاه‌های دانشکده کامپیوتر اختصاص داده شده تا  ظرفیت‌ها و فرصت‌های آنها معرفی شود. میتونید برای اطلاعات بیشتر به https://wss.ce.sharif.edu/labtalks سر بزنید."
+
+  utter_faq/schedule:
+    - text: "سر بزنید به لینک فلان ببینید"
   # Rest of the questions are knowledge-based and should be handled later
 
   # fallback response
