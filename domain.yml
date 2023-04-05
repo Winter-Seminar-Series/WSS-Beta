@@ -14,7 +14,7 @@ intents:
   - react_positive
   - react_negative
   - faq
-#  - what_is_wss
+  - what_is_wss
 #  - prof_selection
 #  - wss_good_for_who
 #  - what_is_the_topic
@@ -33,7 +33,7 @@ intents:
 #  - how_to_register
 #  - remote_participation
 #  - in_person_participation
-#  - who_is_the_organizer
+  - who_is_the_organizer
   # knowledge base intents
   # - prof_x_is_speaking_or_not
   # - prof_x_date_of_speech
@@ -74,7 +74,7 @@ responses:
         چه کمک دیگه ای میتونم بهتون بکنم؟"
 
   utter_faq/what_is_wss:
-    - text: "وسس (WSS) مخفف Winter Seminar Series یا همان مجموعه سمینارهای زمستانه است که معمولا زمستان هر سال برگزار میشود اما امسال در بهار 1402 برگزار خواهد شد."
+    - text: "وسس (WSS) مخفف Winter Seminar Series یا همان مجموعه سمینارهای زمستانه است که معمولا زمستان هر سال برگزار میشود اما امسال در بهار ۱۴۰۲ برگزار خواهد شد."
 
   utter_faq/prof_selection:
     - text: "تیم علمی رویداد که متشکل از اساتید دانشگاه شریف و برترین دانشجویان مقطع دکترا و ارشد دانشکده کامپیوتر شریف می‌باشد، با دقت فراوان به دعوت از اساتید و محققین مختلف می‌پردازد.
@@ -139,7 +139,31 @@ responses:
     - text: "لیست استف زحمتکش رویداد رو میتونید کامل توی https://wss.ce.sharif.edu/staff ببینید."
 
   utter_faq/support:
-    - text: "برای تماس با پشتیبانی شما میتوانید در تلگرام به آیدی  WSS_Info@ پیام دهید."
+    - text: "برای تماس با پشتیبانی شما میتوانید در تلگرام به آیدی WSS_Info@ پیام دهید."
+
+  utter_faq/support_2:
+    - text: "لطفا به اکانت پشتیبانی رویداد در تلگرام به آیدی WSS_Info@ پیام دهید."
+
+utter_faq/feedback:
+    - text: "از بازخوردتان سپاس گزاریم، لطفا به اکانت پشتیبانی رویداد در تلگرام به آیدی WSS_Info@ پیام دهید.					"
+
+  utter_faq/number_of_staff:
+    - text: "تعداد برگزارکنندگان این دوره از رویداد بیش‌ از ۱۰۰ نفر هستند =)؛ برای اطلاع بیشتر، این قسمت از سایت را مشاهده کنید: https://wss.ce.sharif.edu/staff"
+      
+  utter_faq/staff_information:
+    - text: "برای اطلاع راجع‌به برگزارکنندگان، این قسمت از سایت را مشاهده کنید: https://wss.ce.sharif.edu/staff"
+
+  utter_faq/WSS_information:
+    - text: "فرایند جذب استف رویداد هر ساله حدود چندماه پیش از برگزاری رویداد انجام می‌شود و در این دوره، از اسفند ۱۴۰۱ انجام شده است. برای این موضوع، با دانشجویان دانشکده کامپیوتر شریف در ارتباط باشید.					"
+
+  utter_faq/WSS_bot:
+    - text: "من بات پاسخگویی به سوالات مرتبط با رویداد وسس هستم. فرایند شکل گیری من از اسفند 1401 آغاز شد و نسخه اولیه آن در فروردین 1402 رونمایی شد."
+
+  utter_faq/who_is_the_organizer:
+    - text: "دبیر رویداد سینا الهی‌منش است؛ نایب‌دبیرها ایمان محمدی، محمد مصیبی و امیرمهدی نامجو هستند."
+
+  utter_faq/financial:
+    - text: "خیر، هیچ بخشی از رویداد نیاز به پرداخت هزینه جداگانه ندارد.					"
 
   utter_faq/website:
     - text: "سایت برگزاری https://wss.ce.sharif.edu/ است که احتمالا الان دارین توش با من صحبت میکنین :)"
@@ -159,7 +183,7 @@ responses:
 
   # fallback response
   utter_default_answer:
-  - text: "متاسفم من متوجه منظور شما نشدم اگر مایل هستید میتوانید سوال خود را به شکل دیگری مطرح نمایید. همچنین میتوانید با پشتیبانی رویداد در تماس باشید. "
+  - text: "متاسفم من متوجه منظور شما نشدم اگر مایل هستید میتوانید سوال خود را به شکل دیگر و یا کامل‌تر مطرح نمایید. همچنین می‌توانید با پشتیبانی رویداد در تماس باشید."
 
 session_config:
   session_expiration_time: 60
