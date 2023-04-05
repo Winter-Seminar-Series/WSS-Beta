@@ -427,7 +427,7 @@ nlu:
     - رویداد کجا است؟
     - رویداد کجائه؟
     - محل برگزاری چیه؟
-    محل برگزاری کجاست؟
+    - محل برگزاری کجاست؟
     - محل رویداد کجاست؟
     - محل رویداد چیه؟
     - کجا؟
@@ -603,14 +603,14 @@ nlu:
     - آدرس سایت وسس چیه؟
 
 - intent: faq/registeration_deadline
-  example: |
+  examples: |
     - آیا زمان ثبت نام تمدید شده؟
     - آیا ثبت نام تمدید شده؟
     - هنوز میشه ثبت نام کرد؟
     - آیا هنوز میشه ثبت نام کرد؟
 
 - intent: faq/roundtable
-  example: |
+  examples: |
     - میزگرد چیه؟
     - میزگرد
     - داتسان میزگرد چیه؟
@@ -622,7 +622,7 @@ nlu:
     - میزگرد ها به چه دردی میخوره؟
 
 - intent: faq/labtalks
-  example: |
+  examples: |
     - لبتاک ها چی اند؟
     - لب تاک ها چه هستند؟
     - تو لبتاک ها چیکار میکنین؟
@@ -633,7 +633,7 @@ nlu:
     - labtalk ها برای چی هستند؟
 
 - intent: faq/schedule
-  exxample: |
+  examples: |
     - برنامه ارائه ها
 
 #   #These Parts are knowledge based and should be changed by the appropriate person for the task:
