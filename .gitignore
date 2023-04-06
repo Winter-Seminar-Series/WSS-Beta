@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# rasa cahce files
+.rasa
+
+# model
+/models
+/cachemodel
