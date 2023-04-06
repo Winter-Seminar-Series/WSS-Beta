@@ -14,6 +14,9 @@ nlu:
     - سلام بر شما
     - های
     - هلو
+    - سلام سلام
+    - سلام چطوری؟
+    - سلام علیکم
 
 - intent: chitchat/goodbye
   examples: |
@@ -28,6 +31,9 @@ nlu:
     - خدانگهدار
     - خدا نگهدار
     - بدرود
+    - گود بای
+    - خودافظ
+    - مراقبت کن
 
 - intent: chitchat/thanks
   examples: |
@@ -48,6 +54,7 @@ nlu:
     - دم شما گرم
     - دمتون گرم
     - دمت گرم
+    - آقا عالی ممنون
 
 - intent: affirm
   examples: |
@@ -91,6 +98,8 @@ nlu:
     - من راهنمایی میخوام
     - من راهنمایی میخواهم
     - کمکک
+    - کومک
+    - کومکک
 
 - intent: react_positive
   examples: |
@@ -144,6 +153,7 @@ nlu:
     - وسس چیه
     - wss چیه
     - وسس؟
+    - داستان وسس چیه؟
   
 - intent: faq/prof_selection
   examples: |
