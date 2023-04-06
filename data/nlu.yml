@@ -14,6 +14,8 @@ nlu:
     - سلام بر شما
     - های
     - هلو
+    - سلام سلام
+    - سلام چطوری؟
 
 - intent: chitchat/goodbye
   examples: |
@@ -28,6 +30,7 @@ nlu:
     - خدانگهدار
     - خدا نگهدار
     - بدرود
+    - گود بای
 
 - intent: chitchat/thanks
   examples: |
@@ -48,6 +51,8 @@ nlu:
     - دم شما گرم
     - دمتون گرم
     - دمت گرم
+    - سپاس گزارم
+    - سپاسگزارم
 
 - intent: affirm
   examples: |
@@ -91,6 +96,8 @@ nlu:
     - من راهنمایی میخوام
     - من راهنمایی میخواهم
     - کمکک
+    - کومک
+    - کومکک
 
 - intent: react_positive
   examples: |
@@ -111,6 +118,7 @@ nlu:
     - آقا بنازم
     - مرسی
     - نایس
+    - هوممم حله ممنون
 
 - intent: react_negative
   examples: |
