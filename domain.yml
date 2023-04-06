@@ -57,6 +57,14 @@ responses:
 
   utter_chitchat/dumb:
     - text: "ببخشید که نتونستم اونجوری که میخواستید پاسخگو باشم. من هنوز در حال توسعه هستم. این باگ رو میتونید به پشتیبانی گزارش کنید"
+    - text: "ببخشید که نتونستم اونجوری که میخواستید پاسخگو باشم. من هنوز در حال توسعه هستم. این باگ رو میتونید به پشتیبانی گزارش کنید"
+    - text: "ببخشید که نتونستم اونجوری که میخواستید پاسخگو باشم. من هنوز در حال توسعه هستم. این باگ رو میتونید به پشتیبانی گزارش کنید"
+    - text: "ببخشید که نتونستم اونجوری که میخواستید پاسخگو باشم. من هنوز در حال توسعه هستم. این باگ رو میتونید به پشتیبانی گزارش کنید"
+    - text: "ببخشید که نتونستم اونجوری که میخواستید پاسخگو باشم. من هنوز در حال توسعه هستم. این باگ رو میتونید به پشتیبانی گزارش کنید"
+    - text: "دا! دیگه انتظار Chat GPT نداشته باش ازم خدایی! تازه در حال توسعه ام. ولی اگه بخواب میتونی به پشتیبانی این باگو گزارش کنی"
+
+  utter_chitchat/kaftar_easter_egg:
+    - text: "واااای واااای"
 
   utter_yes:
     - text: "بله"
@@ -102,7 +110,7 @@ responses:
   utter_faq/what_is_the_time:
     - text: "دوره‌ی هشتم سری سمینارهای زمستانه در تاریخ ۱۷ فروردین ۱۴۰۲ آغاز می‌شود و ۴ روز به طول می‌انجامد."
 
-  utter_faq/what_is_the_speaker: #TODO: answer in doc was incomplete (should be completed)
+  utter_faq/what_is_the_speaker:
     - text: "اطلاعات مربوط به اساتید سخنران در این رویداد را می‌توانید در این لینک مشاهده کنید: https://wss.ce.sharif.edu/seminars"
 
   utter_faq/preliminaries:
@@ -173,10 +181,14 @@ responses:
 
   utter_faq/schedule:
     - text: "برنامه‌ی ارائه‌ها در روز اول را از این لینک تلگرام ببینید: https://t.me/WSS_SUT/564. همچنین سایر روزها به‌زودی آپدیت می‌شوند."
-  # Rest of the questions are knowledge-based and should be handled later
 
   utter_faq/recording:
     - text: "در صورت اجازه‌ی ارائه‌دهنده‌ها بله، ضبط می‌شن و لینکشون در اختیار شما قرار خواهد گرفت."
+
+  utter_faq/social:
+    - text: "شبکه های مجازی ما: \n تلگرام: https://t.me/WSS_SUT \n اینستاگرام: https://www.instagram.com/wss_sut/ \n توییتر: https://twitter.com/WSS_SUT \n لینکدین: https://www.linkedin.com/company/wss-sut/ \n فیس بوک: https://www.facebook.com/wss.sharif"
+
+  # Rest of the questions are knowledge-based and should be handled later
 
   # fallback response
   utter_default_answer:
