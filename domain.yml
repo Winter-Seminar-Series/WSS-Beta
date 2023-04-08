@@ -70,6 +70,11 @@ responses:
   utter_chitchat/kaftar_easter_egg:
     - text: "واااای واااای"
 
+  utter_chitchat/dookhtar_easter_egg:
+    - text: "به علوی مراجعه کنید: Aryan_Alavi@"
+    - text: "09022723049"
+
+
   utter_yes:
     - text: "بله"
 
